@@ -1,0 +1,250 @@
+---
+layout: 'base_blog.njk'
+writer: 'Saeed Mirshekari'
+profilePicture: '/assets/img/blog/saeed.jpg'
+profileDescription: 'Saeed is currently a Director of Data Science in Mastercard and the Founder & Director of OFallon Labs LLC. He is a former research scholar at LIGO team (Physics Nobel Prize of 2017).'
+---
+
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+
+
+              <div class="entry-content">
+
+
+            <body>   
+            <img src={{thumbnail}} width="100%"  alt=" {{title}} ">
+
+            <div class="blog-author d-flex align-items-center">
+                <div id="wrap">
+                    <div id="left_col">
+                      
+                      <img src={{profilePicture}} class="rounded-circle float-left" alt={{profileDescription}} width="50px">
+                    </div>
+                    <div id="right_col">
+                      By {{writer}}
+                      <p class="bi bi-clock">  {{date | dateFull}} </p>
+
+
+                      <p class = "myframe">
+                        <a href="http://www.facebook.com/share.php?u=saeedmirshekari.com" class="mybtn">
+                          <i class="bi bi-facebook" style="color: #42A5F5;"></i>
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?url=Hey! Check out this interesting website I found saeedmirshekari.com" class="mybtn">
+                          <i class="bi bi-twitter" style="color: #42A5F5;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=saeedmirshekari.com" class="mybtn">
+                          <i class="bi bi-linkedin" style="color:#42A5F5;"></i>
+                        </a>
+                        <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://saeedmirshekari.com."
+                            title="Check out this website!" class="mybtn">
+                          <i class="bi bi-envelope" style="color:#42A5F5;"></i>
+                        </a>
+                      </p>
+                    </div>
+                </div>
+            </div>
+            </body>
+
+            <div class="blog-author d-flex align-items-center">
+              <a href="https://omentors.com"><img src="/assets/img/gifs/attractive.gif" class="float-center" alt="onw on one mentoring platform connecting people in data science" width="250px">
+
+              <div>
+                <h3>We Are O'Mentors!</h3>
+                <a>
+                  Meet Top Data Scientist Mentors from Fortune 500 Companies 1-on-1
+                </a>
+              <a href="https://www.omentors.com" class="btn-blupill" style="font-size:14;">Choose Your Mentor Today</a>
+
+              </div>
+
+            </div>
+
+                {{content | safe}}
+
+              </div>
+              <a href="https://olabs.ck.page/blupill">If you like our work, you will love our newsletter..💚</a>
+              <br><br>
+
+            <div>
+              <a href="https://omentors.com"><img src="/assets/img/gifs/omentors-animation.gif" class="float-center" alt="online data science mentoring one on one" width="100%"></a>
+              <center>
+              <a href="https://www.omentors.com" class="btn-blupill" style="font-size:14;">Find A Mentor Now</a>
+              </center>
+              <hr/>
+
+            </div>
+
+              <h3>About O'Fallon Labs</h3>
+              <p>In <a href="https://saeedmirshekari.com"> O'Fallon Labs</a> we help recent graduates and professionals to get started and thrive in their Data Science careers via 1:1 mentoring and more.</p>
+              <br>
+            </article><!-- End blog entry -->
+
+            <div class="blog-author d-flex align-items-center">
+              <img src={{profilePicture}} class="rounded-circle float-left" style="filter: grayscale(100%);" alt={{profileDescription}}>
+              <div>
+                <h4>{{writer}}</h4>
+                {# <div class="social-links">
+                  <a href="https://twitter.com/smirshekari_"><i class="bi bi-twitter"></i></a>
+                </div> #}
+                <p>
+                {{profileDescription}} 
+                </p>
+              </div>
+            </div>
+
+
+            <div>
+              
+              
+              <div>
+                <div>
+                  <center>
+                  <hr/>
+                  {# <h4 style='color:#888'>Did you like this blog? <br> How do you feel after reading this?</h4> #}
+                  <img src="/assets/img/morphious.png" class="float-center" alt="taking on the advanture to become a data scientist" width='50%'>
+                  <br>
+                  <a href="https://olabs.ck.page/d2d5cddf03" class="btn-redpill" style="font-size:1.5vh;">Let's Go</a>💊
+                  <a href="https://olabs.ck.page/789398da1b" class="btn-blupill" style="font-size:1.5vh;">I'm Good</a>
+                </div>
+                </center>
+              <br> 
+              </div>
+
+        <h4>leave a comment</h4>
+
+          <form name="contact" method="POST" data-netlify="true">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Comment" required></textarea>
+              </div>
+              <p>
+                <br>
+              </p>
+              <div class="text-center"><button type="submit"  style="color: #fff; background: #42A5F5;">Send Comment</button></div>
+              <br>
+          </form>
+        </div>
+        </div><!-- End blog entries list -->
+        
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+
+              <div>
+                    <center>
+                    <h5>
+                    Transitioning to Data Science?<br>
+                    Get Better Results, Faster.
+                    </h5>
+                    </center>
+                <center><a href="/data-science-one-on-one-mentoring/" class="btn-blupill" style="font-size:14px;">Mentorship with Saeed</a></center>
+
+              </div>
+
+              
+              <div class="blog-author d-flex align-items-center">
+                <div>
+
+                    <div id="left_col_50">
+                      <center><img src="/assets/img/blog/saeed.jpg" class="rounded-circle" alt={{profileDescription}}> 
+                      <img src="/assets/img/blog/mentor-txt.png" width="100%" alt={{profileDescription}}> 
+                      </center>                
+                    </div>
+⚡
+                    
+                    <div id="right_col_50">
+                      <center>
+                      <img src='https://www.thispersondoesnotexist.com/' class="rounded-circle" alt={{profileDescription}} >
+                      <img src="/assets/img/blog/mentee-txt.png" width="100px" alt={{profileDescription}}> 
+                      </center>                  
+                    </div>
+
+                </div>
+
+                </div>
+
+                <div>
+                    
+                    <section id="cta" class="cta">
+
+                    {# <div><object data="/assets/text/saeed.txt" type="text/plain"></object></div> #}
+                        <div class="container " data-aos="/fade-in">
+                      <p style="font-size:16px">I am Saeed Mirshekari PhD and I help Data Science enthusiasts to land on their first Data Science job or move to their next role.</p>
+                      <center><a class="cta-btn cta" target="_blank" href="https://calendly.com/saeedmirshekari/introduction"><i class="bi bi-gift" style="color:#FFF;"></i> FREE CALL</a></center>
+                        </div>
+                      </section><!-- End Cta Section -->                   
+                    
+                </div>
+
+            {# START inline-form #}
+            <script async data-uid="a8b0144480" src="https://olabs.ck.page/a8b0144480/index.js"></script>
+            {# END inline-form #}
+
+              <h3 class="sidebar-title">Search</h3>
+              <div class="sidebar-item search-form">
+                <form action="">
+                  <input type="text">
+                  <button type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div><!-- End sidebar search formn-->
+
+              {# <h3 class="sidebar-title">Categories</h3>
+              <div class="sidebar-item categories">
+                <ul>
+                  <li><a href="#">Data Science<span>(2)</span></a></li>
+                  <li><a href="#">Personal Development<span>(2)</span></a></li>
+                  <li><a href="#">Career Coaching<span>(2)</span></a></li>
+                </ul>
+              </div><!-- End sidebar categories--> #}
+
+              <h3 class="sidebar-title">Recent Posts</h3>
+
+              <div class="sidebar-item recent-posts">
+
+                {% for post in collections.feed -%}
+
+                  <div class="post-item clearfix">
+                    <a href="{{post.url}}"><img src="{{post.data.thumbnail}}"></a>
+                    <h4><a href="{{post.url}}">{{post.data.title}}</a></h4>
+                    {# <time>{{post.data.date|dateFull}}</time> #}
+                  </div>
+
+                {% endfor -%}
+                <br>
+                <a href="https://www.saeedmirshekari.com/blog" class="btn-blupill" style="font-size:12;">Learning Center</a>
+
+
+
+              </div><!-- End sidebar recent posts-->
+              {# <h3 class="sidebar-title">Tags</h3>
+              <div class="sidebar-item tags">
+
+                {% for post in collections.post | reverse -%}
+                <ul>
+                  <li><a href="{{post.url}}">{{post.data.tags}}</a></li>
+                </ul>
+                {% endfor -%}
+
+              </div><!-- End sidebar tags--> #}
+
+            </div><!-- End sidebar -->
+          </div><!-- End blog sidebar -->
+
+        </div>
+      </div>
+

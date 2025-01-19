@@ -1,0 +1,51 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "O'Fallon Labs | Data Science Mentoring 1:1",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --input=_src --serve",
+    "build": "npx @11ty/eleventy --input=_src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofallonlabs/saeedmirshekari.git"
+  },
+  "keywords": [
+    "data science consulting",
+    "data science mentoring",
+    "machine learning",
+    "data science mentors",
+    "learning data science",
+    "career coach"
+  ],
+  "author": "Saeed Mirshekari, PhD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ofallonlabs/saeedmirshekari/issues"
+  },
+  "homepage": "https://github.com/ofallonlabs/saeedmirshekari#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "cssp": "^1.0.6",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "firebase": "^10.7.0",
+    "fnm": "^0.0.0",
+    "graceful-fs": "^4.2.11",
+    "luxon": "^3.4.4",
+    "mysql": "^2.18.1",
+    "ngx-pagination": "^6.0.3",
+    "njk": "^2.0.1",
+    "npm": "file:",
+    "npm-css": "^0.2.3",
+    "nunjucks": "^3.2.3",
+    "ometajs": "^4.0.0",
+    "pagination": "^0.4.6",
+    "pify": "^6.1.0",
+    "react-scripts": "^3.0.1",
+    "uglify-js": "^3.17.4"
+  }
+}

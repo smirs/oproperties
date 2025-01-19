@@ -1,0 +1,135 @@
+---
+title: Renting
+pagination:
+  data: collections.renting
+  reverse: true
+  size: 20
+layout: blog_base_nobody.njk
+---
+
+
+
+<head style="font-family: 'Helvetica', 'Arial', sans-serif;"> 
+  
+ <!-- SEO -->
+  <meta content="Data Science Mentoring, Data Science Mentors, Career Development, Data Science, Machine Learning Tips & Tricks, and content related to other topics right here. Hot topics in this page includes: Top Skills for Data Scientists; Is Data Science For Me? 6 Questions to Ask Yourself; How To Prepare For Success In Your First Data Science Job Interview "+"{{pagination.pageNumber}}" name="description">
+  <meta content="Data Science Mentoring Program, Data Science Training, Become Data Scientist, Data Scientist Salary" name="keywords">
+  <meta content="Saeed Mirshekari" name="author">
+  <link rel=“canonical” href=“https://www.opropertiestl.com/blog” />
+</head>
+
+
+{# Next/Previous #}
+<center>
+<div class="pagination_flat">
+<a href="/blogs_strategy" class="prev"> <i class="bi bi-tags"></i> Strategy </a>
+<a href="/blogs_buying" class="prev"> <i class="bi bi-tags"></i> Buying </a> 
+<a href="/blogs_renting" class="prev"> <i class="bi bi-tags"></i> Renting </a>
+<a href="/blogs_maintaining" class="prev"> <i class="bi bi-tags"></i> Maintaining </a> 
+</div>
+</center>
+<br>
+
+<!-- ======= Blog Section ======= -->
+<div class="row">
+
+{% for post in pagination.items %}
+
+  <article class="entry col-md-4" style="margin-left: 0px; margin-right: 0px; background-color:#fff; font-size:14px;">
+
+    <a href="{{post.url}}">
+
+      <div id="wrap">
+
+        <div id="left_col">
+          <div class="column zoom"> <img src="{{post.data.thumbnail}}"  alt="{{post.data.title}}" class="" 
+          style="object-fit:cover; width:90%; height:120px;">
+          </div>
+        </div>
+
+        <div id="right_col">
+          <div class="column"> 
+          <a style="line-height:120%; color:#777" href="{{post.url}}" style="position:static; bottom:0px;">
+          <b>{{ post.data.title }}</b></a> 
+          <br>
+          <i class="bi bi-clock"></i> <i>{{ post.data.date|dateFull }}</i>
+          {# <br> #}
+          <i class="bi bi-pen"></i> <i href="{{post.url}}">{{ post.data.writer }}</i>
+          {# <br> #}
+          {% for tag in post.data.tags %}
+            {% if tag != 'post' %}
+                <i class="bi bi-tags"></i> <i>{{ tag }}</i>
+            {% endif %}          
+          {% endfor %}
+          </div>
+        </div>
+
+      </div>
+    </a>
+
+  </article>
+
+{% endfor %}
+
+
+{# Next/Previous #}
+<center>
+<div class="pagination" style='color=#000; font-size:11px;'>
+
+{% if pagination.pageNumber == 0  %}
+  <a class="disabled active prev"><<</a>
+{% endif %}
+
+{% if pagination.pageNumber > 0 %}
+  {% if pagination.pageNumber == 1 %}
+    <a href="/blog/" class="prev"><<</a>
+  {% else %}
+  <a href="/blog/" class="prev"><<</a>
+  {% endif %}
+{% endif %}
+
+{# start---------- #}
+{# <a class="next" style='background-color:#a62753; color:#fff'>Page {{pagination.pageNumber + 1}}/{{pagination.pages.length}}</a> #}
+
+{% for page in [pagination.pageNumber-2, pagination.pageNumber-1, pagination.pageNumber, pagination.pageNumber+1, pagination.pageNumber+2] %}
+
+  {% if page == pagination.pageNumber%}
+    <a href="/blog/{{ page }}" style='background-color:#42A5F5; color:#000;'><b>{{page+1}}</b></a>
+  {% else %}
+
+    {% if page in [-2, -1 , pagination.pages.length, pagination.pages.length+1]  %}
+      <a style='background-color:#fff; color:#fff;'>{{page+1}}</a>
+    {% else %}
+      
+      {% if page == 0 %}
+      <a href="/blog/" style='background-color:#ddd; color:#111;'>{{page+1}}</a>
+      {% else %}
+      <a href="/blog/{{ page }}" style='background-color:#ddd; color:#000;'>{{page+1}}</a>
+      {% endif %}
+
+    {% endif %}
+
+  {% endif %}
+
+{% endfor %}
+
+{# end---------- #}
+
+{% if (pagination.pageNumber) < (pagination.pages.length - 1)  %}
+  <a href="/blog/{{ pagination.pages.length-1}}">>></a>
+{% endif %}
+
+{% if pagination.pageNumber == pagination.pages.length - 1  %}
+  <a class="disabled active">>></a>
+{% endif %}
+
+
+</div>
+</center>
+
+{# ********************************** #}
+
+<script>
+
+</script>
+

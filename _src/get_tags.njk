@@ -1,0 +1,22 @@
+---
+pagination:
+  data: collections.{{ tag }}
+  size: 12
+  alias: tag
+permalink: /blogs_{{ tag }}
+layout: blog_base_ai.njk
+---
+<h1>Our best blogs about Data Science {{ tag }}...</h1>
+<img src="/assets/img/{{ tag }}.png" width="100%">
+
+<ol>
+{% set myPosts = collections.investing %}
+{% for post in myPosts | reverse %}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {# <a href="{{ post.data.author }}"></a> #}
+
+  </li>
+{% endfor %}
+</ol>
+

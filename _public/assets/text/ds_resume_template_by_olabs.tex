@@ -1,0 +1,111 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage[scale=0.915]{geometry}
+\usepackage{import}
+\usepackage{multicol}
+\usepackage{import}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\name{John}{Smith, M.Sc.}
+\newcommand*{\customcventry}[7][.13em]{
+\begin{tabular}{@{}l}
+{\bfseries #4} \
+{\itshape #3}
+\end{tabular}
+\hfill
+\begin{tabular}{l@{}}
+{\bfseries #5} \
+{\itshape #2}
+\end{tabular}
+\ifx&#7&%
+\else{\
+\begin{minipage}{\maincolumnwidth}%
+\small#7%
+\end{minipage}}\fi%
+\par\addvspace{#1}}
+\begin{document}
+\makecvtitle
+\vspace*{-12mm}
+\begin{center}
+\begin{tabular}{c c c c}
+\enspace\faHome\ San Francisco, CA &
+\enspace\faEnvelope\ john.smith@gmail.com & 
+\enspace\faPhone +1-699-400-6345 & 
+\enspace\textcolor{blue}{\href{https://www.linkedin.com/in/yourid}{\faLinkedin}}
+\textcolor{blue}{\href{https://github.com/yourid}{\faGithub}}
+\end{tabular}
+\end{center}
+\vspace{-5ex}
+\section{SUMMARY}
+{Data Scientist with Master degree in Information and Data Science and 7+ years of work experience in Machine Learning and Project Management in Education, Bio Sciences and Computer Vision. 10+ yrs of coding experience in Python including various ML libraries including Scikit-Learn and TensorFlow. Looking for new opportunities in Data Science and Analytics in the SF Bay Area or Remote.}
+%\vspace{-1ex}
+\section{SKILLS}
+{\textbf{PROGRAMMING LANGUAGES: }Python (10+yrs), R, SQL. \textbf{ML TOOLS: }Scikit-Learn (10+yrs), TensorFlow (4+yrs), Keras, PySpark, SciPy, Pandas, NumPy. \textbf{ML TECHNIQUES: }Deep Learning, Neural Networks, Dimensionality Reduction, Hypothesis Testing, A/B Testing, KNN, K-Means, XGBoost, Random Forest. \textbf{PROJECT MANAGEMENT: }Agile and Scrum methodologies. \textbf{DATA VISUALIZATION: } Seaborn, MatplotLib, Tableau.
+%\vspace{-1ex}
+\section{WORK EXPERIENCE}
+\customcventry{2023--present}{{\color{black}(Micro Solutions)}}{\textbf{Data Scientist}}{San Fransisco, CA}{}{
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Led the implementation of the Medallion Architecture on Databricks in PySpark. Streamlining data workflows from raw processing to aggregated data-driven insights to significantly improve strategic analysis during the entire data lifecycle to optimize business outcomes.
+\item Enhanced modularity within Databricks, focusing on scalability and automation to improve the process and sustainability of the system.
+\end{itemize}}}
+
+\customcventry{2022--2023}{{\color{black}(Carly Startup)}}{\textbf{ML/Data Science Instructor/Consultant}}{Remote}{}{
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Developed and executed a data science curriculum to empower underprivileged individuals to launch careers in data science, leveraging extensive industry expertise. Designed and led hands-on workshops for the real-world applications of data science and machine learning.
+\end{itemize}}}
+
+\customcventry{2020--2022}{{\color{black}(Buck Labs)}}{\textbf{Machine Learning Engineer/Data Scientist}}{San Francisco, CA}{}{
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Led the design and implementation of a machine learning pipeline for optimizing Object Detection and Classification in radar images, enhancing Software-Defined 4D Imaging Radar capabilities. Achieved high precision and recall rates by implementing advanced neural network techniques and transfer learning, making a big impact to support the company’s goals in creating advanced perception systems.
+\item Automated the generation of simulated radar images, establishing a comprehensive dataset and a robust data processing pipeline for ML/DL.
+\end{itemize}}}
+
+
+\customcventry{2014--2017}{{\color{black}(Indiana University)}}{\textbf{Data Scientist}}{Bloomington, IN}{}{
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Oprimized the design and development of a new predictive model for undergraduate enrollments, delivering key data-driven insights to help course planning and student admissions strategies. Contributed to strategic decision-making across the organization by integrating multiple data sources, including HR, student, and financial data and creating interactive Tableau dashboards for Decision Support Initiative (DSI).
+\item Collaborated in planning projects with the Scrum Master, working within Agile methodology to manage sprint planning and retrospective sessions. My role was instrumental in streamlining project workflows and enhancing team productivity through effective Agile practices.
+\end{itemize}}}
+
+\customcventry{Jan--Aug 2014}{{\color{black}(University of Pennsylvania)}}{\textbf{Data Scientist}}{Philadelphia, PA}{}{
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Conducted research and data analysis on information diffusion on social media platforms (Twitter) to study the dynamics of news dissemination and the flow of information. (\href{https://dl.acm.org/doi/10.1145/2615569.2615668}{results published} in international peer-reviewed journals and conference presentations)
+\end{itemize}}}
+
+%\vspace{-1ex}
+\section{DS TRAININGS \& CERTIFICATES}
+
+\customcventry{2019-2020}{}{\textbf{Data Science Fellow}}{Springboard}{}{}
+
+600+ hours of hands-on curriculum, with 1:1 industry expert mentor oversight, and completion of in-depth real world projects:
+\begin{itemize}[leftmargin=1cm, itemsep=0pt, parsep=0pt, label={\textcolor{black}{\textbullet}}]
+    \item \href{https://github.com/azades/Springboard/blob/master/exploratory_analysis_fashion_MNIST.ipynb}{\textit{Image Classification on Fashion-MNIST dataset using CNN}}
+    \item \href{https://github.com/azades/ML-Identify-Customer-Segments-Project/blob/master/Identify_Customer_Segments.ipynb}{\textit{Creating Customer Segments Using K-means and PCA}}
+    \item {\textit{Credit Card Fraud Detection System Using ANN, Random Forest and XGBoost}}
+\end{itemize}
+\customcventry{Mar--May 2020}{Certificate}{\textbf{Deep Learning}}{University of San Francisco, CA}{}{}
+\customcventry{Jan--Apr 2019}{Nanodegree}{\textbf{Machine Learning Engineering}}{Udacity, Online}{}{}
+
+%\vspace{-1ex}
+\section{EDUCATION}
+\customcventry{2014}{in Data and Information Sciences}{\textbf{M.Sc.}}{Indiana University, Bloomington}{}{}
+\customcventry{2010}{in Software Engineering}{\textbf{B.Sc.}}{University of St. Paul, Ireland}{}{}
+
+%\vspace{-1ex}
+\section{VOLUNTEERING}
+\customcventry{2016--2019}{}{\textbf{Co-chair of Greek Women in Computing}}{Anita Borg Institute}{}{}
+
+\vspace{-\baselineskip}
+\begin{itemize}
+    \item Developed long-term and short-term plans for outreach programs, and moderated professional panels on career growth, contributing to the growth of a community of over 500 students and professionals in the United States.
+    \vspace{-2ex}
+    \item Organized and managed volunteers for conferences, demonstrating excellent project management and leadership skills.
+\end{itemize}
+
+
+\end{document}

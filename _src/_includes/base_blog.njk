@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{# START Sign Up Form #}
+<script async data-uid="28ecebe197" src="https://olabs.ck.page/28ecebe197/index.js"></script>
+{# END Sign Up Form #}
+
+<head style="font-family: 'Helvetica', 'Arial', sans-serif;">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4WBFLP0G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N4WBFLP0G4');
+</script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> {{ title }}</title>
+
+  <meta name = "image" content={{thumbnail}}>
+  <meta name = "title" content="{{title}}">
+  <meta name = "description" content="{{meta_description}}">
+  <meta name="keywords" content="data science mentoring, data science learning, data analytics courses, top data science courses in the usa, data science mentoring programs in the usa, data science online in the usa, Data science tutorials in the USA, data science online mentoring, data science course online, data science and machine learning course, data analytics courses, best data science mentoring in the usa, best online data science mentors in the usa, data science mentoring, data science mentoring program in the usa, best online data science courses, best online platform to learn data science, best online learning, data science jobs">
+
+  <meta property="og:image" content={{thumbnail}}>
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{meta_description}}">
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="@("https://saeedmirshekari.com/blog/"+{{title}}.replace(/\s+/g, '-').toLowerCase())"/>
+  
+  <meta property="og:site_name" content="OFallon Labs" />
+  <meta property="article:publisher" content="https://www.omentors.com" />
+  <meta property="article:section" content="Coding" />
+  <meta property="article:tag" content="Coding" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:site" content="@smirshekari_" />
+
+
+  {# <link rel=“canonical” href=“https://www.saeedmirshekari.com/” /> #}
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.ico" rel="icon">
+  <link href="/assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Serenity - v4.7.0
+  * Template URL: https://bootstrapmade.com/serenity-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+{# highlighting the python scripts #}
+{# <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css" integrity="sha512-3xLMEigMNYLDJLAgaGlDSxpGykyb+nQnJBzbkQy2a0gyVKL2ZpNOPIj1rD8IPFaJbwAgId/atho1+LBpWu5DhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js" integrity="sha512-Pbb8o120v5/hN/a6LjF4N4Lxou+xYZ0QcVF8J6TWhBbHmctQWd8O6xTDmHpE/91OjPzCk4JRoiJsexHYg4SotQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>hljs.highlightAll();</script> #}
+
+</head>
+
+
+<main id="main"> 
+
+{% include 'header_blog.njk'%}
+
+<style>
+h1, h2, h3, h4, h5 {
+  font-family: Merriweather;
+  font-weight: bold;
+}
+</style>
+
+
+{# <body style="font-family: CouMerriweather; font-weight: normal; "> #}
+<body style="font-family: Arial; font-weight: normal;">
+
+{{content | safe}}
+
+
+{# Crisp Chat: START #}
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="ef9a21bb-6362-4ff8-a348-4d3a6ab6c4e8";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+{# Crisp Chat: END #}
+
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+</body>
+
+</main>
+
+{% include 'footer.njk' %}
+
+</html>

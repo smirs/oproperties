@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head style="font-family: 'Helvetica', 'Arial', sans-serif;">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4WBFLP0G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N4WBFLP0G4');
+</script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "title" content={{title}}>
+    <meta name = "description" content={{description}}>
+
+    <title> {{ title }}</title>
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.ico" rel="icon">
+  <link href="/assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Serenity - v4.7.0
+  * Template URL: https://bootstrapmade.com/serenity-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+
+<main id="main"> 
+
+{% include 'header.njk'%}
+
+<style>
+h1, h2, h3, h4, h5 {
+  font-family: Merriweather;
+  font-weight: bold;
+}
+</style>
+
+
+{# <body style="font-family: CouMerriweather; font-weight: normal; "> #}
+<body style="font-family: Tahoma; font-weight: normal; ">
+
+{{content | safe}}
+
+{# Crisp Chat: START #}
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="ef9a21bb-6362-4ff8-a348-4d3a6ab6c4e8";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+{# Crisp Chat: END #}
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+</body>
+
+</main>
+
+{% include 'footer.njk' %}
+
+</html>
