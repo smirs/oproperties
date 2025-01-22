@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.saeedmirshekari.com/sitemap.xml
+Sitemap: https://www.opropertiestl.com/sitemap.xml
