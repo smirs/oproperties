@@ -15,7 +15,7 @@ date: 2025-01-22T04:23:12.222Z
 tags:
   - post
   - buying
-thumbnail: /assets/img/uploads/credit-assesment.gif
+thumbnail: /assets/img/uploads/credit-assesment-1-.gif
 ---
 # A Comprehensive Guide to Buying Rental Properties in St. Louis
 
