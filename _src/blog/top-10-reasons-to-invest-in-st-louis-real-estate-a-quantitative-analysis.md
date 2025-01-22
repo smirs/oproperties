@@ -14,7 +14,7 @@ date: 2025-01-20T15:31:26.840Z
 tags:
   - post
   - strategy
-thumbnail: /assets/img/uploads/undraw_for-sale_7qjb.png
+thumbnail: /assets/img/uploads/house-searching-amico.png
 ---
 ## Top 10 Reasons to Invest in St. Louis Real Estate: A Quantitative Analysis
 
