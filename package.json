@@ -38,7 +38,6 @@
     "luxon": "^3.4.4",
     "mysql": "^2.18.1",
     "ngx-pagination": "^6.0.3",
-    "njk": "^2.0.1",
     "npm": "file:",
     "npm-css": "^0.2.3",
     "nunjucks": "^3.2.3",
