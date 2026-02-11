@@ -721,7 +721,7 @@ section {
   border-color: #42A5F5;
 }
 
-.pricing .btn-buy:hover {
+.templates .btn-buy:hover {
   background: #42A5F5;
 }
 
@@ -1164,9 +1164,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pricing
+# templates
 --------------------------------------------------------------*/
-.pricing .box {
+.templates .box {
   padding: 20px;
   background: #fff;
   text-align: center;
@@ -1175,7 +1175,7 @@ section {
   position: relative;
   overflow: hidden;
 }
-.pricing h3 {
+.templates h3 {
   font-weight: 400;
   margin: -20px -20px 20px -20px;
   padding: 20px 15px;
@@ -1184,24 +1184,24 @@ section {
   color: #777777;
   background: #f8f8f8;
 }
-.pricing h4 {
+.templates h4 {
   font-size: 36px;
   color: #42A5F5;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
-.pricing h4 sup {
+.templates h4 sup {
   font-size: 20px;
   top: -15px;
   left: -3px;
 }
-.pricing h4 span {
+.templates h4 span {
   color: #bababa;
   font-size: 16px;
   font-weight: 300;
 }
-.pricing ul {
+.templates ul {
   padding: 0;
   list-style: none;
   color: #444444;
@@ -1209,25 +1209,25 @@ section {
   line-height: 20px;
   font-size: 14px;
 }
-.pricing ul li {
+.templates ul li {
   padding-bottom: 16px;
 }
-.pricing ul i {
+.templates ul i {
   color: #42A5F5;
   font-size: 18px;
   padding-right: 4px;
 }
-.pricing ul .na {
+.templates ul .na {
   color: #ccc;
   text-decoration: line-through;
 }
-.pricing .btn-wrap {
+.templates .btn-wrap {
   margin: 20px -20px -20px -20px;
   padding: 20px 15px;
   background: #f8f8f8;
   text-align: center;
 }
-.pricing .btn-buy {
+.templates .btn-buy {
   background: #000;
   display: inline-block;
   padding: 6px 35px 8px 35px;
@@ -1242,7 +1242,7 @@ section {
   transition: 0.3s;
 }
 
-.pricing .btn-buy-opp {
+.templates .btn-buy-opp {
   background: #A62753;
   display: inline-block;
   padding: 6px 25px 8px 25px;
@@ -1256,15 +1256,15 @@ section {
   box-shadow: 0 3px 7px #7145C0;
   transition: 0.3s;
 }
-.pricing .btn-buy:hover {
+.templates .btn-buy:hover {
   background: #42A5F5;
 }
-.pricing .featured h3 {
+.templates .featured h3 {
   color: #fff;
   background: #42A5F5;
   box-shadow: 0 3px 7px rgba(148, 192, 69, 0.4);
 }
-.pricing .advanced {
+.templates .advanced {
   width: 200px;
   position: absolute;
   top: 18px;

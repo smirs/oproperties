@@ -1,0 +1,240 @@
+\documentclass[12pt]{article}
+
+\usepackage[top=1in, bottom=1.75in, left=1in, right=1in]{geometry}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}  % clear default headers/footers
+
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear default header/footer
+
+\setlength{\fboxrule}{1.2pt}
+\setlength{\fboxsep}{8pt}
+
+\fancyhead[L]{
+
+		\begin{minipage}{\textwidth}
+			\begin{minipage}{0.15\textwidth}
+				\includegraphics[width=\linewidth]{logo.png}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.9\textwidth}
+				\raggedleft
+				\textbf{O'Properties STL,} {The Proper Property Management} \\
+				Phone: (626) 689-5848 \quad
+				Email: info@opropertiestl.com\\
+				\href{https://www.opropertiestl.com}{Click Here to Download More Landlord Templates}
+				
+			\end{minipage}
+		
+		\end{minipage}
+	
+}
+
+\renewcommand{\headrulewidth}{0pt} % removes the default line
+
+\setlength{\headheight}{90pt}
+\setlength{\topmargin}{-40pt}
+
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+
+\newcommand{\itemrow}[3]{
+	\CheckBox[name=#1]{ } #2 \hfill
+	\TextField[name=#1notes,width=7cm]{Note:} \\[0.2cm]
+}
+
+\newcommand{\itemsign}[3]{
+	\TextField[name=#1,width=4cm]{Full Name:} \hfill
+	\TextField[name=#2,width=4cm]{Signature:} \hfill
+	\TextField[name=#3,width=2cm]{Date:} \\[0.2cm]
+}
+
+\begin{document}
+	\fancyfoot[R]{Page \thepage/\pageref{LastPage}}
+	% ---------------- DOCUMENT TITLE ----------------
+	\vspace{.1cm}
+	\begin{center}
+		\fbox{\parbox{0.8\textwidth}{\centering {\Huge \textbf{Move-In Inspection Checklist}}}}
+	\end{center}
+	
+	\vspace{0.5cm}
+	
+	% --- Instructions ---
+	\section*{Instructions for Completing the Move-In Inspection Checklist}
+	% ... your instructions here ...
+	Please carefully review each area of your unit and check the corresponding box for items that are in satisfactory condition. If you notice any damage, defect, or issue, do not check the box and use the "Notes" field to provide details. Use the "Notes" section to report issues such as scratches, stains, leaks, or non-functioning equipment. Sign and date the form once inspection is complete. Please return this completed checklist within the first 2-weeks of your lease start date. Thank you for helping us maintain a safe and well-kept property.
+	
+	% --- Property Info Box ---
+	\vspace{2.5cm}
+	\noindent
+	\fbox{%
+		\begin{minipage}{\textwidth}
+			\vspace{0.2cm}
+			\textbf{Property Address:} \TextField[name=address,width=0.75\linewidth]{} \\
+		\end{minipage}%
+	}
+
+
+	\newpage
+	\begin{Form}
+		
+	\section{INTERIOR SPACE}
+	
+
+
+		% ---------------- KITCHEN ----------------
+		\subsection{Kitchen}
+		\itemrow{kit1}{Walls clean, no holes or damage}{}
+		\itemrow{kit2}{Ceiling clean, no stains or cracks}{}
+		\itemrow{kit3}{Flooring in good condition}{}		
+		\itemrow{kit4}{Sink and faucet working, no leaks}{}
+		\itemrow{kit5}{Garbage disposal working}{}
+		\itemrow{kit6}{Cabinets and drawers functional}{}
+		\itemrow{kit7}{Counter-tops in good condition}{}
+		\itemrow{kit8}{Refrigerator clean and working}{}
+		\itemrow{kit9}{Stove/Oven working}{}
+		\itemrow{kit10}{Microwave working}{}
+		\itemrow{kit11}{Exhaust hood/fan working}{}
+		\itemrow{kit12}{Dishwasher working}{}
+		\itemrow{kit13}{Lights, outlets, and fans working}{}	
+		
+		\subsection{Living Room}
+		
+		\itemrow{liv1}{Walls clean, no holes or damage}{}
+		\itemrow{liv2}{Ceiling clean, no stains or cracks}{}
+		\itemrow{liv3}{Flooring in good condition}{}
+		\itemrow{liv4}{The main-entrance lock is working}{}
+		\itemrow{liv5}{Windows, doors, and blinds working}{}
+		\itemrow{liv6}{Lights, outlets, and fans working}{}	
+
+		
+		% ---------------- MAIN BEDROOM ----------------
+		\subsection{Main Bedroom}
+		
+		\itemrow{mbed1}{Walls clean, no holes or damage}{}
+		\itemrow{mbed2}{Ceiling clean, no stains or cracks}{}
+		\itemrow{mbed3}{Flooring in good condition}{}
+		\itemrow{mbed4}{Closet doors and shelves functional}{}
+		\itemrow{mbed5}{Windows and blinds working}{}
+		\itemrow{mbed6}{Lights, outlets, and fans working}{}	
+		
+		% ---------------- MAIN BATHROOM ----------------
+		\subsection{Main Bathroom}
+
+		\itemrow{mbath1}{Walls clean, no holes or damage}{}
+		\itemrow{mbath2}{Ceiling clean, no stains or cracks}{}
+		\itemrow{mbath3}{Flooring in good condition}{}
+		\itemrow{mbath4}{Toilet flushes properly}{}
+		\itemrow{mbath5}{Sink and faucet working}{}
+		\itemrow{mbath6}{Shower/Tub draining properly}{}
+		\itemrow{mbath7}{No leaks under sink}{}
+		\itemrow{mbath8}{Mirror and fixtures intact}{}
+		\itemrow{mbath9}{Exhaust fan working}{}
+		\itemrow{mbath10}{Lights and outlet(s) working}{}			
+		% ---------------- GUEST BEDROOM ----------------
+		\subsection{Guest Bedroom}
+		
+		\itemrow{gbed1}{Walls clean, no holes or damage}{}
+		\itemrow{gbed2}{Ceiling clean, no stains or cracks}{}
+		\itemrow{gbed3}{Flooring in good condition}{}
+		\itemrow{gbed4}{Closet doors and shelves functional}{}
+		\itemrow{gbed5}{Windows and blinds working}{}
+		\itemrow{gbed6}{Lights, outlets, and fans working}{}
+		
+		% ---------------- GUEST BATHROOM ----------------
+		\subsection{Guest Bathroom}
+		\itemrow{gbath1}{Walls clean, no holes or damage}{}
+		\itemrow{gbath2}{Ceiling clean, no stains or cracks}{}
+		\itemrow{gbath3}{Flooring in good condition}{}		
+		\itemrow{gbath4}{Toilet flushes properly}{}
+		\itemrow{gbath5}{Sink and faucet working}{}
+		\itemrow{gbath6}{Shower/Tub draining properly}{}
+		\itemrow{gbath7}{No leaks under sink}{}
+		\itemrow{gbath8}{Mirror and fixtures intact}{}
+		\itemrow{gbath9}{Exhaust fan working}{}
+		\itemrow{gbath10}{Lights and outlet(s) working}{}			
+				
+		% ---------------- LAUNDRY AREA ----------------
+		\subsection{Laundry Area}
+		
+		\itemrow{lau1}{Washer operational (electric)}{}
+		\itemrow{lau2}{Dryer operational (electric)}{}
+		\itemrow{lau3}{Water heater operational (electric)}{}
+		\itemrow{lau4}{Furnace operational (gas)}{}
+		\itemrow{lau5}{No leaks or unusual noises}{}
+		
+		\newpage
+		\section{EXTERIOR SPACE}
+		
+				% ---------------- BALCONY & STORAGE ----------------
+		\subsection{Balcony Deck and Storage Room}
+		
+		\itemrow{bal1}{Balcony floor in good condition}{}
+		\itemrow{bal1}{Balcony railing in good condition}{}
+		\itemrow{bal2}{Sliding door and lock working}{}
+		\itemrow{bal3}{Storage room clean and functional}{}	
+		
+		% ---------------- EXTERIOR HALLWAY ----------------
+		\subsection{Exterior Hallway (Common Area Outside Unit)}
+		
+		\itemrow{ext1}{Area clean and free of debris}{}
+		\itemrow{ext2}{No damage to walls or flooring}{}
+		\itemrow{ext3}{Lighting functional}{}
+		
+		% ---------------- CARPORT SPACE ----------------
+		\subsection{Carport Space}
+		
+		\itemrow{car1}{Assigned carport number clearly marked}{}
+		\itemrow{car2}{Carport area clean and free of debris}{}
+		\itemrow{car3}{No oil stains or hazardous spills present}{}
+		\itemrow{car4}{Structure and posts in good condition}{}
+		
+	\end{Form}
+	
+	\newpage
+	% --- push the following content to the bottom ---
+
+	\vspace{1cm}
+	
+	\section*{General Notes:}
+	If there is any other issue that you would like to report on which is not listed above, you can list them briefly in the box below. Otherwise, please leave it blank.
+	\vspace{1cm}\\
+	\TextField[name=4, multiline=true,width=\linewidth,height=10\baselineskip,]{}
+
+	\vfill
+	\section*{ACKNOWLEDGMENT:}
+	I acknowledge that I have carefully reviewed this Move-In Checklist at the time of taking possession of the unit. I have noted and reported any existing damages, issues, or concerns to the best of my knowledge. I understand that this document will be used as a reference for the condition of the property at move-in and may be referenced at move-out.\\
+
+	\fbox{%
+	\begin{minipage}{\textwidth}
+		\vspace{0.5cm}
+		\textbf{1st Tenant:} \vspace{0.2cm}
+		
+		\itemsign{name=fin1}{name=lan1}{name=dat1}
+
+		\textbf{2nd Tenant:}\vspace{0.2cm}
+		
+		\itemsign{name=fin2}{name=lan2}{name=dat2}
+	\end{minipage}%
+	}	
+
+	\fbox{%
+	\begin{minipage}{\textwidth}
+		\vspace{0.5cm}
+		\textbf{Property Manager / Landlord:} \vspace{0.2cm}
+		
+		\itemsign{name=fin3}{name=lan3}{name=dat3}
+	\end{minipage}%
+}	
+
+
+	
+\end{document}
