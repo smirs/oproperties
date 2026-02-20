@@ -1,7 +1,7 @@
 {
   "name": "npm",
   "version": "1.0.0",
-  "description": "O'Fallon Labs | Data Science Mentoring 1:1",
+  "description": "O'Properties | Property Management Solutions in St. Louis",
   "main": "index.js",
   "scripts": {
     "start": "npx @11ty/eleventy --input=_src --serve",
@@ -9,22 +9,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ofallonlabs/saeedmirshekari.git"
+    "url": "git+https://github.com/ofallonlabs/oproperties.git"
   },
   "keywords": [
-    "data science consulting",
-    "data science mentoring",
-    "machine learning",
-    "data science mentors",
-    "learning data science",
-    "career coach"
+    "st. louis real estate",
+    "private landlords",
+    "rental properties",
+    "real estate hacks",
+    "real estate investment",
+    "real estate templates"
   ],
   "author": "Saeed Mirshekari, PhD",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ofallonlabs/saeedmirshekari/issues"
+    "url": "https://github.com/ofallonlabs/oproperties/issues"
   },
-  "homepage": "https://github.com/ofallonlabs/saeedmirshekari#readme",
+  "homepage": "https://github.com/ofallonlabs/oproperties#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
   },
