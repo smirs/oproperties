@@ -3021,10 +3021,9 @@ myh1:hover span{
   }
 
   .table-responsive td {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: right;
+    text-align: center;
     padding: 8px 0;
     border: none;
   }
@@ -3044,5 +3043,12 @@ myh1:hover span{
 
   .table-responsive td:first-child::before {
     margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-responsive td a.btn {
+    display: block;
+    width: 100%;
   }
 }
