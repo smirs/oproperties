@@ -3024,7 +3024,7 @@ myh1:hover span{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 8px 0;
+    padding: 5px 0;
     border: none;
   }
 
@@ -3032,23 +3032,17 @@ myh1:hover span{
     content: attr(data-label);
     font-weight: 600;
     text-align: left;
-    margin-right: 10px;
-  }
-
-  .table-responsive td:first-child {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    margin-right: 5px; 
   }
 
   .table-responsive td:first-child::before {
     margin-bottom: 5px;
   }
+
+  .table-responsive a.btn {
+    width: 90%;
+  }
+
 }
 
-@media (max-width: 768px) {
-  .table-responsive td a.btn {
-    display: block;
-    width: 100%;
-  }
-}
+
