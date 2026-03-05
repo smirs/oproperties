@@ -482,14 +482,14 @@ section {
   text-align: center;
   padding-bottom: 30px;
 }
-/* .section-title h2 {
+.section-title h2 {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 0;
   font-family: "Poppins", sans-serif;
   color: #646c55;
-} */
+}
 .section-title p {
   margin-bottom: 0;
 }
@@ -583,7 +583,7 @@ section {
   color: #8b9578;
 }
 .about .content {
-  font-size: 15px;
+  font-size: 18px;
 }
 .about .content h3 {
   font-weight: 700;
